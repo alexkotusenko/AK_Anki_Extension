@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Anki Time Saver",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "description": "Quickly add new cards to Anki.",
+  "action": {
+    "default_popup": "index.html"
+  }
+}

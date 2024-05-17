@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    padding: 5px;
+}
+
+.mainInputField {
+    padding: 6px;
+    font-size: 13px;
+    outline: none;
+    display: block;
+    max-width: 100%;
+    min-width: 30%;
+    min-height: 30px;
+    width: 100%;
+}
+
+h4 {
+    margin: 10px;
+    padding: 0;
+}
+
+#addButton {
+    margin: 10px
+}
+
+#mainDiv {
+    margin: 8px;
+    width: 250px;
+    max-height: 350px;
+    // border: 1px solid #ccc;
+    overflow-y: auto; /* Add vertical scrollbar when content exceeds div's height */
+}
+
+.extension-container * {
+    width: 100%;
+}
+
+#deckDropdown {
+    width: 100%;
+}
+
+#changeDeckButton {
+    font-size: 12;
+    padding: 4px;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    scale: 0.8;
+}
+
+
+#deckPDiv {
+    /* display: inline; */
+}
+
+#deckP {
+    max-width: 100%;
+    /* background-color: yellow; */
+}
+
+#deckDiv * {
+    display: inline-table;
+    margin: 0;
+    padding: 0;
+}
+
+.smallerCheckBox * {
+    margin: 0;
+}
+
+.smallerCheckBox p {
+    font-size: 12px;
+}
+
+.smallerCheckBox div:first-of-type {
+    scale: 4;
+}
