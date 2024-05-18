@@ -19,4 +19,4 @@ See *Contact* section
 Feel free to contact me via email if you want to collaborate with me.
 
 ## Contact
-Concact me on alexkotusenko@gmail.com if you have any bugs to report or just want to contribute to the project with ideas and/or code.
+Concact me on alexkotusenko.dev@gmail.com if you have any bugs to report or just want to contribute to the project with ideas and/or code.
