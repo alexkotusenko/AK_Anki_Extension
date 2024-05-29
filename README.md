@@ -1,3 +1,6 @@
+## Install
+The extension can be installed at https://chromewebstore.google.com/detail/anki-time-saver/fonjadincmgmiijefljgkiabphnecdnp
+
 ## Goal
 This extension was made to allow Anki users to create cards faster without having to open the app to input card data.
 
