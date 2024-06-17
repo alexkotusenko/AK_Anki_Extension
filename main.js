@@ -111,9 +111,8 @@ function addNewCard() {
       deckName: loadedDeckName,
       fields: {
         Front: adaptUserInput(frontInputField.value),
-        Back: backInputField.value,
+        Back: adaptUserInput(backInputField.value),
       },
-
       options: {
         allowDuplicate: true,
       },
