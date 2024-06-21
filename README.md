@@ -10,7 +10,7 @@ This extension was made to allow Anki users to create cards faster without havin
 **You need to have Anki running to be able to use the extension. Should you not have the required anki setup to use the extension, an error message will be displayed in the window.**
 
 ## Current Version
-The current version is **1.0.0**
+The current version is **1.1.0** (last updated on 20 June 2024)
 
 ## Current Status
 This is the first version of the app and it's still very primitive. I'm planning to add more features in the future.
