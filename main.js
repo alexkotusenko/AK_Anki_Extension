@@ -135,6 +135,9 @@ function addNewCard() {
       console.log(error);
       alert(error);
     });
+
+  chrome.storage.local.set({ ankiCardFrontContent: "" });
+  chrome.storage.local.set({ ankiCardBackContent: "" });
 }
 
 function controlEnterHandler(event) {
@@ -173,6 +176,21 @@ deckSelect.addEventListener("change", function () {
 let changeDeckMode = false;
 // RUN WHEN THE DOM OF THE EXTENSION IS FULLY LOADED
 document.addEventListener("DOMContentLoaded", () => {
+  getValueFromStorage("ankiCardFrontContent")
+    .then((value) => {
+      if (value != undefined) {
+        frontInputField.value = value;
+      }
+    })
+    .catch((error) => {});
+  getValueFromStorage("ankiCardBackContent")
+    .then((value) => {
+      if (value != undefined) {
+        backInputField.value = value;
+      }
+    })
+    .catch((error) => {});
+
   changeDeckMode = false;
   // fetch decks first
   fetchDecks(deckSelect);
@@ -214,4 +232,12 @@ changeDeckCheckbox.addEventListener("change", () => {
       dropdownDiv.removeChild(deckSelect);
     }
   }
+});
+
+frontInputField.addEventListener("input", () => {
+  chrome.storage.local.set({ ankiCardFrontContent: frontInputField.value });
+});
+
+backInputField.addEventListener("input", () => {
+  chrome.storage.local.set({ ankiCardBackContent: backInputField.value });
 });
